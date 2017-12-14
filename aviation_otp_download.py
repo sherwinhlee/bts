@@ -1,9 +1,9 @@
 """
-Appendix A - Data Download - btts_https_requests.py
 Script to automate multiple 
 HTTP POST requests for BTS
 Aviation On-Time Performance
-Database downloads.
+Database downloads at URL:
+https://www.transtats.bts.gov/Tables.asp?DB_ID=120&DB_Name=Airline%20On-Time%20Performance%20Data&DB_Short_Name=On-Time
 """
 import requests
 import zipfile
@@ -11,7 +11,7 @@ import io
 import sys
 
 # Extract zip file to following path
-zpath = 'C:/Users/Sherwin/Desktop/BTSrawdata/'
+zpath = '.../OTPrawdata/'
 
 def httprequest(url,headers,data,mo,yr):
 	"""
